@@ -17,3 +17,7 @@ Built and deployed a web server using AWS EC2 and Nginx.
 - Nginx
 - Security Groups
 - SSH
+
+![AWS](https://img.shields.io/badge/AWS-EC2-orange?style=for-the-badge&logo=amazonaws)
+![Nginx](https://img.shields.io/badge/Nginx-Web_Server-green?style=for-the-badge&logo=nginx)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-Linux-E95420?style=for-the-badge&logo=ubuntu)
