@@ -12,6 +12,9 @@ The objective was to understand AWS networking fundamentals by creating a custom
 - Internet Gateway
 - Route Table
 - Public Route Association
+  
+![AWS](https://img.shields.io/badge/AWS-VPC-orange?style=for-the-badge&logo=amazonaws)
+![Networking](https://img.shields.io/badge/Networking-VPC-blue?style=for-the-badge)
 
 This lab serves as the foundation for future AWS networking projects such as EC2, Load Balancers, NAT Gateway, and Auto Scaling.
 
