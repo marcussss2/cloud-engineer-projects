@@ -94,11 +94,13 @@ Project screenshots documenting each configuration step will be added below.
 | Step | Screenshot |
 |------|------------|
 | IAM Dashboard | ![](screenshots/01-iam-dashboard.jpg) |
-| User Group Creation | *(Coming Soon)* |
-| IAM User Creation | *(Coming Soon)* |
-| EC2 Permission Validation | *(Coming Soon)* |
-| Custom IAM Policy | *(Coming Soon)* |
-| IAM Role Creation | *(Coming Soon)* |
+| CloudEngineers Group Creation | ![](screenshots/02-cloudengineers-group.png) |
+| S3Auditors Group Creation | ![](screenshots/03-s3auditors-group.png) |
+| Custom IAM Policy | ![](screenshots/04-custom-policy.png) |
+| IAM Users Creation | ![](screenshots/05-iam-users.png) |
+| S3 Permission Validation | ![](screenshots/06-s3-permission-test.png) |
+| EC2 Permission Validation | ![](screenshots/07-ec2-permission-test.png) |
+| IAM Role Creation | ![](screenshots/08-iam-role.png) |
 
 ---
 
