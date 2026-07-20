@@ -93,7 +93,7 @@ Project screenshots documenting each configuration step will be added below.
 
 | Step | Screenshot |
 |------|------------|
-| IAM Dashboard | *(Coming Soon)* |
+| IAM Dashboard | ![](screenshots/01-iam-dashboard.jpg) |
 | User Group Creation | *(Coming Soon)* |
 | IAM User Creation | *(Coming Soon)* |
 | EC2 Permission Validation | *(Coming Soon)* |
