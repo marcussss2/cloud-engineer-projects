@@ -8,7 +8,7 @@ This project demonstrates how to deploy a highly available web application using
 
 ## Architecture
 
-![Architecture](architecture/alb-architecture-diagram.png)
+![Architecture](architecture/aws-alb-diagram.png)
 
 ---
 
