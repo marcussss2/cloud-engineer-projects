@@ -1,0 +1,19 @@
+# Private SSH keys
+*.pem
+
+# Environment files
+.env
+
+# Windows
+Thumbs.db
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
