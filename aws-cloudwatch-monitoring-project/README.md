@@ -69,17 +69,11 @@ Email Notification
 
 ![Alarm Configuration](screenshots/alarm-configuration.png)
 
-### Alarm Triggered
-
-![Alarm Triggered](screenshots/alarm-triggered.png)
-
 ### Email Alert
 
 ![Email Alert](screenshots/email-alert.png)
 
-### Alarm Recovered
 
-![Alarm Recovered](screenshots/alarm-recovered.png)
 
 ---
 
