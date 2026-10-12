@@ -83,10 +83,19 @@ Instance returns to InService
 - Testing automated instance replacement.
 
 ## Screenshots
+### Launch Template
 ![Launch Template](screenshots/Launch-Template.png.png)
+
+### Launch Template Summary
 ![Launch Template Summary](screenshots/Launch-Template-Summary.png.png)
+
+### Auto Scaling Group Capacity and Health
 ![Auto Scaling Group Capacity and Health](screenshots/Auto-Scaling-Group-Capacity-and-Health.png.png)
+
+Original EC2 Instance Terminated
 ![Original EC2 Instance Terminated](screenshots/Original-EC2-Instance-Terminated.png.png))
+
+Replacement EC2 Instance Running
 ![Replacement EC2 Instance Running](screenshots/Replacement-EC2-Instance-Running.png.png)
 
 ## Cleanup
