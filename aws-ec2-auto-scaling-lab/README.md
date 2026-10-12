@@ -84,6 +84,10 @@ Instance returns to InService
 
 ## Screenshots
 ![Launch Template](screenshots/Launch-Template.png.png)
+![Launch Template Summary](screenshots/Launch-Template-Summary.png.png)
+![Auto Scaling Group Capacity and Health](screenshots/Auto-Scaling-Group-Capacity-and-Health.png.png)
+![Original EC2 Instance Terminated](screenshots/Original-EC2-Instance-Terminated.png.png))
+![Replacement EC2 Instance Running](screenshots/Replacement-EC2-Instance-Running.png.png)
 
 ## Cleanup
 
