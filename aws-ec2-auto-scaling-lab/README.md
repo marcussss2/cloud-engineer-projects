@@ -93,7 +93,7 @@ Instance returns to InService
 ![Auto Scaling Group Capacity and Health](screenshots/Auto-Scaling-Group-Capacity-and-Health.png.png)
 
 Original EC2 Instance Terminated
-![Original EC2 Instance Terminated](screenshots/Original-EC2-Instance-Terminated.png.png))
+![Original EC2 Instance Terminated](screenshots/Original-EC2-Instance-Terminated.png.png)
 
 Replacement EC2 Instance Running
 ![Replacement EC2 Instance Running](screenshots/Replacement-EC2-Instance-Running.png.png)
