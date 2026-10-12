@@ -83,8 +83,7 @@ Instance returns to InService
 - Testing automated instance replacement.
 
 ## Screenshots
-
-See the `screenshots/` folder for evidence of the launch template, Auto Scaling Group configuration, instance termination, and successful replacement.
+Launch Template ![](screenshots/Lauch Template)
 
 ## Cleanup
 
