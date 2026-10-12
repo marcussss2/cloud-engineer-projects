@@ -83,7 +83,7 @@ Instance returns to InService
 - Testing automated instance replacement.
 
 ## Screenshots
-Launch Template ![](screenshots/Lauch Template)
+![Launch Template](screenshots/Launch-Template.png)
 
 ## Cleanup
 
