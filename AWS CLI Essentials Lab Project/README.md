@@ -1,106 +1,113 @@
-# AWS CLI Fundamentals Lab
+# AWS EC2 Auto Scaling Lab
 
-## 📖 Project Overview
+## Overview
 
-This project demonstrates the installation, configuration, and practical usage of the AWS Command Line Interface (AWS CLI). The lab focuses on authenticating with AWS using IAM credentials and managing Amazon S3 resources through CLI commands instead of the AWS Management Console.
+This project demonstrates how to configure an Amazon EC2 Auto Scaling Group to maintain the desired number of instances and automatically replace an instance after termination.
 
----
+The lab uses a launch template to define the EC2 configuration and an Auto Scaling Group to manage instance capacity.
 
-## 🏗️ Architecture
+## Architecture
 
-```
-Local Computer
-       │
-       │ AWS CLI
-       ▼
-IAM User Authentication
-       │
-       ▼
-Amazon S3 Bucket
-       │
-       ├── Upload File
-       ├── List Objects
-       └── Download File
-```
-
----
-
-## ☁️ AWS Services Used
-
-- AWS CLI v2
-- AWS IAM
-- Amazon S3
-- Amazon EC2 (Read Operations)
-
----
-
-## 🚀 What I Built
-
-- Installed AWS CLI Version 2
-- Configured AWS CLI using IAM Access Keys
-- Verified AWS identity using STS
-- Created a dedicated S3 bucket for CLI operations
-- Uploaded files to Amazon S3
-- Listed S3 bucket contents
-- Downloaded files from Amazon S3
-- Executed AWS CLI EC2 commands
-- Practiced troubleshooting IAM permission errors
-
----
-
-## 💻 AWS CLI Commands Used
-
-```bash
-aws --version
-
-aws configure
-
-aws sts get-caller-identity
-
-aws s3 cp hello.txt s3://marcus-cli-lab-2026/
-
-aws s3 ls s3://marcus-cli-lab-2026
-
-aws s3 cp s3://marcus-cli-lab-2026/hello.txt .
-
-aws ec2 describe-instances --query "Reservations[*].Instances[*].[InstanceId,State.Name,InstanceType]" --output table
+```text
+EC2 Launch Template
+        |
+        v
+Auto Scaling Group
+        |
+        v
+EC2 Instance
+        |
+        | Instance terminated
+        v
+Auto Scaling Group detects reduced capacity
+        |
+        v
+Replacement EC2 instance launched
+        |
+        v
+Instance returns to InService
 ```
 
----
+## AWS Services Used
 
-## 🛠️ Skills Demonstrated
+- Amazon EC2
+- EC2 Launch Templates
+- EC2 Auto Scaling
+- Amazon VPC
+- Availability Zones
 
-- AWS CLI Configuration
-- IAM Authentication
-- Amazon S3 File Management
-- EC2 CLI Queries
-- AWS STS Identity Verification
-- Command Line Operations
-- Troubleshooting IAM Permissions
+## Configuration
 
----
+| Setting | Value |
+|---|---|
+| Region | Asia Pacific (Singapore) |
+| Operating System | Ubuntu |
+| Instance Type | t3.micro |
+| Launch Template | autoscaling-web-template |
+| Auto Scaling Group | cloud-web-sg |
+| Minimum Capacity | 1 |
+| Desired Capacity | 1 |
+| Maximum Capacity | 2 |
+| Network | Default VPC |
+| Subnets | Two Availability Zones |
 
-## 📷 Project Screenshots
+## Implementation
 
-| Step | Screenshot |
-|------|------------|
-| AWS CLI Installation | ![](screenshots/01-aws-cli-version.png) |
-| IAM Access Key | ![](screenshots/02-access-key-created.png) |
-| Caller Identity | ![](screenshots/03-caller-identity.png) |
-| Create S3 Bucket | ![](screenshots/04-create-s3-bucket.png) |
-| Upload File | ![](screenshots/05-upload-file.png) |
-| List Bucket | ![](screenshots/06-list-bucket.png) |
-| Download File | ![](screenshots/07-download-file.png) |
-| Download Verification | ![](screenshots/08-download-verification.png) |
-| EC2 CLI Command | ![](screenshots/09-ec2-cli-command.png) |
-| S3 Bucket Content | ![](screenshots/10-s3-bucket-content.png) |
+1. Created a launch template using an Ubuntu AMI and the t3.micro instance type.
+2. Configured a security group for instance access.
+3. Created an Auto Scaling Group using the launch template.
+4. Selected subnets in two Availability Zones.
+5. Configured minimum capacity to 1, desired capacity to 1, and maximum capacity to 2.
+6. Verified that the initial instance entered the InService lifecycle state.
+7. Terminated the original instance to simulate instance loss.
+8. Observed AWS launch a replacement instance.
+9. Verified that the replacement returned to InService and reported a healthy status.
 
----
+## Test Results
 
-## 📚 Lessons Learned
+**Test:** Automatic instance replacement
 
-- AWS CLI provides a fast and efficient way to manage AWS resources.
-- IAM permissions directly affect CLI operations.
-- AWS STS helps verify the currently authenticated IAM identity.
-- Separating resources into dedicated buckets simplifies management.
-- Troubleshooting AccessDenied errors requires checking IAM policies, bucket configuration, and CLI credentials.
+- The original EC2 instance was terminated.
+- The Auto Scaling Group launched a replacement.
+- The replacement had a different instance ID.
+- The replacement returned to InService and reported healthy.
+
+**Result:** Successfully demonstrated automatic instance replacement after termination.
+
+## Key Learnings
+
+- Creating reusable EC2 launch templates.
+- Configuring Auto Scaling Groups and capacity limits.
+- Understanding instance lifecycle states.
+- Selecting subnets across Availability Zones.
+- Testing automated instance replacement.
+
+## Screenshots
+
+### 1. Launch Template
+
+![Launch Template](screenshots/Launch%20Template.png)
+
+### 2. Launch Template Summary
+
+![Launch Template Summary](screenshots/Launch%20Template%20Summary.png)
+
+### 3. Original EC2 Instance Terminated
+
+![Original EC2 Instance Terminated](screenshots/Original%20EC2%20Instance%20Terminated.png)
+
+### 4. Replacement EC2 Instance Running
+
+![Replacement EC2 Instance Running](screenshots/Replacement%20EC2%20Instance%20Running.png)
+
+### 5. Auto Scaling Group Capacity and Health
+
+![Auto Scaling Group Capacity and Health](screenshots/Auto%20Scaling%20Group%20Capacity%20and%20Health.png)
+
+## Cleanup
+
+After testing, delete the Auto Scaling Group and its managed EC2 instances. Check for remaining EBS volumes, Elastic IPs, load balancers, and other resources that could incur charges.
+
+## Disclaimer
+
+This project was created for educational purposes to practice AWS infrastructure configuration and automated instance replacement. AWS charges may apply to resources used.
