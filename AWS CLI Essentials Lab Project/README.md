@@ -102,7 +102,7 @@ Instance returns to InService
 
 ### 5. Auto Scaling Group Capacity and Health
 
-![Auto Scaling Group Capacity and Health](screenshots/Auto Scaling Group Capacity and Health.png)
+![Auto Scaling Group Capacity and Health](screenshots/Auto-Scaling-Group-Capacity-and-Health.png)
 
 ## Cleanup
 
