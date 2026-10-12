@@ -86,23 +86,23 @@ Instance returns to InService
 
 ### 1. Launch Template
 
-![Launch Template](screenshots/Launch 20Template.png)
+![Launch Template](screenshots/Launch-Template.png)
 
 ### 2. Launch Template Summary
 
-![Launch Template Summary](screenshots/Launch%20Template%20Summary.png)
+![Launch Template Summary](screenshots/Launch-Template-Summary.png)
 
 ### 3. Original EC2 Instance Terminated
 
-![Original EC2 Instance Terminated](screenshots/Original%20EC2%20Instance%20Terminated.png)
+![Original EC2 Instance Terminated](screenshots/Original-EC2-Instance-Terminated.png)
 
 ### 4. Replacement EC2 Instance Running
 
-![Replacement EC2 Instance Running](screenshots/Replacement%20EC2%20Instance%20Running.png)
+![Replacement EC2 Instance Running](screenshots/Replacement-EC2-Instance-Running.png)
 
 ### 5. Auto Scaling Group Capacity and Health
 
-![Auto Scaling Group Capacity and Health](screenshots/Auto%20Scaling%20Group%20Capacity%20and%20Health.png)
+![Auto Scaling Group Capacity and Health](screenshots/Auto Scaling Group Capacity and Health.png)
 
 ## Cleanup
 
