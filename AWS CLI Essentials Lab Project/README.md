@@ -86,7 +86,7 @@ Instance returns to InService
 
 ### 1. Launch Template
 
-![Launch Template](screenshots/Launch%20Template.png)
+![Launch Template](screenshots/Launch 20Template.png)
 
 ### 2. Launch Template Summary
 
