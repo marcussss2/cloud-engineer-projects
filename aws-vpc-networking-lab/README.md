@@ -4,7 +4,7 @@
 
 This project demonstrates how to build a custom **Amazon Virtual Private Cloud (VPC)** from scratch.
 
-The objective was to understand AWS networking fundamentals by creating a custom network environment with
+The objective was to understand AWS networking fundamentals by creating a custom network environment with:
 
 - Custom VPC
 - Public Subnet
