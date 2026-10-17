@@ -19,7 +19,7 @@ This project demonstrates how to deploy a highly available web application using
 - Application Load Balancer (ALB)
 - Target Group
 - Security Groups
-- Nginx Web Server
+- Nginx Web Server.
 
 ---
 
