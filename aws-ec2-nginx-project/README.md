@@ -14,7 +14,7 @@ Built and deployed a web server using AWS EC2 and Nginx.
 ## Skills Used
 - AWS EC2
 - Ubuntu Linux
-- Nginx
+- Nginx.
 - Security Groups
 - SSH
 
