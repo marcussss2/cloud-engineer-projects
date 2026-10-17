@@ -18,7 +18,7 @@ The objective is to understand how AWS secures cloud environments by granting us
 ## Objectives
 
 - Create IAM Users
-- Create IAM User Groupa
+- Create IAM User Groups
 - Attach AWS Managed Policies
 - Create Custom IAM Policies
 - Implement Least Privilege Access
