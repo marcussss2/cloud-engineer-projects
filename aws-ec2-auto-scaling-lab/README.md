@@ -69,7 +69,7 @@ Instance returns to InService
 
 - The original EC2 instance was terminated.
 - The Auto Scaling Group launched a replacement.
-- The replacement had a different instance ID.
+- The replacement had a different instance ID..
 - The replacement returned to InService and reported healthy.
 
 **Result:** Successfully demonstrated automatic instance replacement after termination.
