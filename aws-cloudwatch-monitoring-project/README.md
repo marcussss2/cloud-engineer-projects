@@ -17,7 +17,7 @@ This project demonstrates how to monitor an Amazon EC2 instance using AWS CloudW
 - Create CloudWatch alarms
 - Configure SNS email notifications
 - Simulate high CPU usage
-- Verify alarm recovery after CPU usage returns to normal
+- Verify alarm recovery after CPU usage returns to normal.
 
 ## Architecture
 
