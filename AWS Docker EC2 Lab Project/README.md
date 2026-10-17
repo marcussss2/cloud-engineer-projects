@@ -154,7 +154,7 @@ The public Nginx deployment was also verified through the EC2 public IP using a 
 - Configuring Security Groups for SSH and HTTP
 - Installing and managing Docker on Ubuntu
 - Working with Docker images and containers
-- Building custom Docker images using Dockerfiles
+- Building custom Docker images using Dockerfiles.
 - Docker port mapping
 - Running Nginx inside a container
 - Deploying static web content with Nginx
