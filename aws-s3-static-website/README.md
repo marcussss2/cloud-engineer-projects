@@ -17,7 +17,7 @@ The website was configured with static website hosting, bucket policies, and pub
 
 | Service | Purpose |
 |---------|---------|
-| Amazon S3 | Host static website |
+| Amazon S3 | Host static website 
 | Bucket Policy | Allow public access |
 | Static Website Hosting | Serve HTML, CSS, and JavaScript files |
 
